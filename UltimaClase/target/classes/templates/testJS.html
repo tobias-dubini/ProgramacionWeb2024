@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div id="text1" onclick="cambiar()"></div>
+    <div id="text2"></div>
+    <div id="text3"></div>
+    <div id="text4"></div>
+    <script>
+        //Código Javascript
+        //Comentario de una sola linea
+        /* Bloque de comentarios  */
+
+        /*
+            DOM Document Objet Model 
+
+            BOM Browser Object Model
+
+        */
+
+        variable=3
+        variable="Hola"
+        //console.log(variable)       //imprime en consola
+        //document.write(variable)    //imprime en el documento
+        //alert(variable)             //imprime en un popup
+
+        text1=document.getElementById("text1")
+        text2=document.getElementById("text2")
+        text3=document.getElementById("text3")
+        //text4=document.getElementById("text4")
+
+        text1.innerHTML="Hoy es Martes"
+        text1.style="color: red; background-color: yellow;"
+        text2.innerHTML="Curso de JavaScript"
+        text2.style="text-align: center; color: blue; font-size: 30px;"
+        text3.innerHTML="Centro 35"
+        //text4.innerHTML="Hace Frio!"
+        document.getElementById("text4").innerHTML="Hace Frio!"
+
+        function cambiar(){
+            text1.style="color: blue; background-color: red;"
+        }
+    </script>
+
+</body>
+</html>
